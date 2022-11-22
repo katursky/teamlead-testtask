@@ -2,14 +2,184 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 body {
   font-family: "Montserrat";
+  background-color: #e2e2e2;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 10px
+    ),
+    repeating-linear-gradient(#e0e1ff55, #aeb2ff);
 }
 
 button {
-  border-radius: 3px;
-  border: none;
   cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+}
+
+.start-block,
+.review-block,
+.form-block {
+  background-color: #d1d1d1;
+}
+
+.myvideo {
+  display: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.start-block,
+.ingrid-block,
+.review-block,
+.promo-block,
+.form-block {
+  width: 100%;
+  height: 100vh;
+}
+
+.start-block,
+.ingrid-block,
+.review-block,
+.promo-block,
+.form-block,
+.start-product-block {
+  padding-top: 70px;
+}
+
+.ingrid,
+.promo-list-block {
+  margin-top: 40px;
+}
+
+.promo-product-block {
+  margin-top: 120px;
+}
+
+.ingrid-name {
+  margin-top: 20px;
+}
+
+.ingrid-img-block {
+  margin-top: 150px;
+}
+
+.name-block,
+.form-name-block {
+  font-size: 58px;
+  font-weight: bold;
+  letter-spacing: 0.13em;
+  color: darkgrey;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.start-product-img,
+.form-product-img,
+.ingrid-product-img {
+  width: 20em;
+  height: 30em;
+  background: url(../images/prod.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.start-product-block,
+.promo-product-block {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.start-product-list {
+  align-self: center;
+}
+
+.ingrid-block,
+.promo-product-block,
+.promo-list,
+.form-main-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-descript {
+  width: 40%;
+}
+
+.ingrid-img {
+  width: 12em;
+  height: 12em;
+  background: url(../images/water.jpg);
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.order-btn {
+  font-size: 28px;
+  padding: 1.5rem;
+  border: 3px solid rgb(0, 195, 255);
+  background-color: white;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.order-btn:hover {
+  color: rgb(0, 195, 255);
+  background-color: rgb(238, 238, 238);
+  transition: 0.2s;
+}
+
+.ingrid {
+  text-align: center;
+}
+
+.promo-img {
+  width: 40%;
+  height: 450px;
+  background: url(../images/doctor.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .wrapper {
+    width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapper {
+    width: 100%;
+  }
 }
