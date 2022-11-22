@@ -21,8 +21,21 @@ button {
   cursor: pointer;
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
   margin: 0;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  background: white;
+  border: 2px solid rgb(0, 195, 255);
+  box-sizing: border-box;
+  border-radius: 25px;
 }
 
 .start-block,
@@ -134,6 +147,7 @@ h1 {
   background-color: white;
   border-radius: 50px;
   transition: 0.2s;
+  margin-top: 45px;
 }
 
 .order-btn:hover {
@@ -142,7 +156,13 @@ h1 {
   transition: 0.2s;
 }
 
-.ingrid {
+.ingrid,
+.promo-list-block,
+.ingrid-img-block,
+.start-product-list,
+.form-order-block,
+.form-timer-block,
+.form-product-price {
   text-align: center;
 }
 
@@ -152,6 +172,33 @@ h1 {
   background: url(../images/doctor.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.start-product-list,
+.promo-list {
+  font-size: 22px;
+  font-style: italic;
+}
+
+.promo-descript,
+.new-price,
+.form-timer-block {
+  font-size: 26px;
+}
+
+.ingrid-name,
+.old-price {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-list-block {
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
