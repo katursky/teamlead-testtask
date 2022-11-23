@@ -9,6 +9,7 @@
     <title>LevelUp</title>
     <script defer src="./js/jquery-3.6.1.min.js"></script>
     <script defer src="./js/script.js"></script>
+    <script defer src="./js/timer.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -95,11 +96,6 @@
             </div>
           </div>
         </div>
-        <div class="review-button-block">
-          <form action="#form-block">
-            <button class="order-btn">ЗАКАЗАТЬ</button>
-          </form>
-        </div>
       </div>
       <div class="promo-block">
         <div class="promo-product-block">
@@ -129,7 +125,7 @@
       </div>
       <div class="form-block" id="form-block">
         <div class="form-name-block"><h1>LevelUp</h1></div>
-        <div class="form-timer-block">30</div>
+        <div class="form-timer-block"></div>
         <div class="form-main-block">
           <div class="form-product-block">
             <div class="form-product-img"></div>
@@ -140,8 +136,12 @@
           </div>
           <div class="form-order-block">
             <form class="form" action="">
-              <input type="name" placeholder="Name" />
-              <input type="number" placeholder="Phone" />
+              <div class="tooltip" data-tooltip="Джон">
+                <input type="name" placeholder="Name" />
+              </div>
+              <div class="tooltip" data-tooltip="+79990000000">
+                <input type="number" placeholder="Phone" />
+              </div>
             </form>
             <button class="order-btn">ЗАКАЗАТЬ</button>
           </div>
