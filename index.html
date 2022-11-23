@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>LevelUp</title>
+    <script defer src="./js/jquery-3.6.1.min.js"></script>
+    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -25,7 +27,9 @@
               <li>Praesent sed dui sed leo</li>
               <li>Maecenas id odio egestas</li>
             </ul>
-            <button class="order-btn">ЗАКАЗАТЬ</button>
+            <form action="#form-block">
+              <button class="order-btn">ЗАКАЗАТЬ</button>
+            </form>
           </div>
         </div>
       </div>
@@ -46,7 +50,9 @@
         </div>
         <div class="ingrid-img-block">
           <div class="ingrid-product-img"></div>
-          <button class="order-btn">ЗАКАЗАТЬ</button>
+          <form action="#form-block">
+            <button class="order-btn">ЗАКАЗАТЬ</button>
+          </form>
         </div>
         <div class="ingrid-list">
           <div class="ingrid">
@@ -63,7 +69,39 @@
           </div>
         </div>
       </div>
-      <div class="review-block"></div>
+      <div class="review-block">
+        <div class="custom-slider">
+          <div class="slide">
+            <div class="slide-img"></div>
+            <div class="slide-name">Lorem Ipsum</div>
+            <div class="slide-review">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              euismod varius metus nec lacinia.
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-img"></div>
+            <div class="slide-name">Lorem Ipsum</div>
+            <div class="slide-review">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              euismod varius metus nec lacinia.
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-img"></div>
+            <div class="slide-name">Lorem Ipsum</div>
+            <div class="slide-review">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              euismod varius metus nec lacinia.
+            </div>
+          </div>
+        </div>
+        <div class="review-btton-block">
+          <form action="#form-block">
+            <button class="order-btn">ЗАКАЗАТЬ</button>
+          </form>
+        </div>
+      </div>
       <div class="promo-block">
         <div class="promo-product-block">
           <div class="promo-img"></div>
@@ -84,11 +122,13 @@
             <li>Maecenas id odio egestas</li>
           </ul>
           <div class="promo-button-block">
-            <button class="order-btn">ЗАКАЗАТЬ</button>
+            <form action="#form-block">
+              <button class="order-btn">ЗАКАЗАТЬ</button>
+            </form>
           </div>
         </div>
       </div>
-      <div class="form-block">
+      <div class="form-block" id="form-block">
         <div class="form-name-block"><h1>LevelUp</h1></div>
         <div class="form-timer-block">30</div>
         <div class="form-main-block">

@@ -201,6 +201,28 @@ input {
   text-align: center;
 }
 
+.custom-slider {
+  position: relative;
+}
+
+.custom-slider > div {
+  position: absolute;
+}
+
+.custom-slider,
+.custom-slider > div {
+  width: 100%;
+}
+
+.slide-img {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/doctor.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
 @media (min-width: 1200px) {
   .wrapper {
     width: 1140px;
